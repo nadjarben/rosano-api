@@ -12,7 +12,9 @@ const productSchema = new mongoose.Schema({
   price: Number,
   realPrice: Number,
   image: String,
-  liter: String
+  liter: String,
+  brand: String,
+  available: Boolean
 });
 
 

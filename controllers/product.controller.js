@@ -13,7 +13,10 @@ exports.createProduct = async (req, res) => {
       descriptionEn,
       price,
       realPrice,
-      image
+      image,
+      liter,
+      brand,
+      available
     } = req.body;
 
     product = new Product({
@@ -26,7 +29,10 @@ exports.createProduct = async (req, res) => {
       descriptionEn,
       price,
       realPrice,
-      image
+      image,
+      liter,
+      brand,
+      available
     });
     await product.save((err, data) => {
       if (err) {

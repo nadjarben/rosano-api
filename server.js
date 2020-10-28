@@ -20,7 +20,6 @@ app.use(cors());
 
 
 //routes
-app.use('/api/card', require('./routes/card.route'))
 app.use('/api/product', require('./routes/product.route'))
 
 
