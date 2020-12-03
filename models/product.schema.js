@@ -14,7 +14,8 @@ const productSchema = new mongoose.Schema({
   image: String,
   liter: String,
   brand: String,
-  available: Boolean
+  available: Boolean,
+  percentage: Number
 });
 
 

@@ -6,13 +6,17 @@ const {
   createProduct,
   listProducts,
   listProduct,
-  deleteProduct
+  deleteProduct,
+  disableProduct,
+  updateProduct
 } = require("../controllers/product.controller");
 
 router.post("/create", createProduct);
 router.get("/products", listProducts)
 router.get("/product/:product", listProduct)
-router.delete("/:product", deleteProduct)
+router.delete("/:id", deleteProduct)
+router.patch("/disable/:id", disableProduct)
+router.put("/:id", updateProduct)
 
 
 module.exports = router;
